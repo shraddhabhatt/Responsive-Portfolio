@@ -237,8 +237,70 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+/* media query for desktop screen size */ 
+@media screen and (max-width: 980px) {
+ nav{
+    width: 100%;
+    height: 2%;
+    margin: 0px 0px 0px 200px;
+    padding: 5px 10px;
+  }
+  nav a {
+    margin-left: 5px; 
+    padding-left: 5px;
+  }
 
- @media screen and (max-width: 768px) {
+  #logo {
+    width: 100%;
+    margin-left: 0;
+  }
+  .container {
+    max-width: 980px;
+  }
+ .main-section {
+    width: 100%;
+    height: auto;
+    padding: 20px 20px 10px 20px;
+    margin: 50px 10px;
+    float: center;
+ }
+  h1 {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  }
+  p{
+    overflow-wrap: auto;
+    word-wrap: break-word;
+  }
+  .sidebar {
+  width: 100%;
+  max-width: 230px;
+  padding: 10px;
+  margin: 50px 20px;
+  float: right;
+}
+#connect{
+   align-self: center;
+   display: block;
+}
+
+h3,
+.sidebar h2 {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  line-height: 15px;
+}
+.work {
+  float: center;
+  width: 600px;
+}
+ #auth-image {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
+/* media query for tablet screen size */ 
+@media screen and (max-width: 768px) {
  nav{
     width: 100%;
     height: 2%;
@@ -258,7 +320,7 @@ input[type=submit] {
     max-width: 768px;
   }
  .main-section {
-    width: 90%;
+    width: 100%;
     height: auto;
     padding: 20px 20px 10px 20px;
     margin: 10px 50px;
@@ -282,45 +344,40 @@ input[type=submit] {
 #connect{
    align-self: center;
    display: block;
+   padding-left: 10px;
 }
-
+#sub-connect{
+   padding-left: 15px;
+}
 h3,
 .sidebar h2 {
-  padding-bottom: 10px;
+  padding: 10px;
   margin-bottom: 10px;
   line-height: 15px;
 }
 .work {
   float: center;
-  width: 580px;
-  
+  width: 600px;
 }
  #auth-image {
     width: 100%;
     margin-bottom: 5%;
   }
+}
 
-  .portfolio {
-    width: 100%;
-  }
-  .portfolio h4 {
-    width: 100%;
-  }
-  #portfolio-setting img  {
-    width: 100%;
-  }
-
- }
- @media screen and (max-width: 640px) {
+/*Media query for phone landscape size view*/
+@media screen and (max-width: 640px) 
+{
  nav{
-    width: 70%;
+    width: 100%;
     height: 2%;
     margin: 0px 0px 0px 80px;
+    padding: 10px 190px;
   }
   nav a {
     margin-left: 5px; 
     padding-left: 5px;
-    float: center;
+    float: left;
   }
 
  #logo {
@@ -358,6 +415,9 @@ h3,
 #connect{
    align-self: center;
 }
+#sub-connect{
+   padding-left: 15px;
+}
 
 h3,
 .sidebar h2 {
@@ -368,21 +428,9 @@ h3,
 .work {
   float: center;
   width: 580px;
-  
 }
- #auth-image {
-    width: 100%;
-    margin-bottom: 5%;
-  }
-
-  .portfolio {
-    width: 100%;
-  }
-  .portfolio h4 {
-    width: 100%;
-  }
-  #portfolio-setting img  {
-    width: 100%;
-  }
-
- }
+#auth-image {
+  width: 100%;
+  margin-bottom: 5%;
+}
+}
